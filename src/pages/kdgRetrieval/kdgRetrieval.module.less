@@ -1,0 +1,76 @@
+.layout {
+    height: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    .header {
+        background: transparent;
+        text-align: center;
+
+        .autoComplete {
+            width: 600px;
+        }
+    }
+
+    .contentLayout {
+        .content {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            .filter {
+                padding: 0 20px;
+                margin-bottom: 16px;
+
+                .pageHeader :global {
+                    padding: 0;
+                    margin-bottom: 8px;
+
+                    .ant-page-header-heading-title {
+                        height: 40px;
+                        line-height: 40px;
+                        padding: 0 20px;
+                        font-size: 20px;
+                    }
+                }
+
+                .filterCondition {
+                    height: 40px;
+                    line-height: 40px;
+
+                    .conditionType {
+                        display: inline-block;
+                        width: 100px;
+                        text-align: right;
+                        margin-right: 30px;
+                    }
+                }
+            }
+
+            .searchResult {
+                flex: auto;
+                overflow: auto;
+                padding: 0 20px;
+            }
+
+            .showDrawerButton {
+                height: 100px;
+                width: 12px;
+                position: absolute;
+                top: 20%;
+
+                i {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .sider {
+            background: transparent;
+            flex: 0 0 300px !important;
+            max-width: 300px !important;
+            min-width: 300px !important;
+            width: 300px !important;
+        }
+    }
+}

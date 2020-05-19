@@ -1,0 +1,47 @@
+.layout {
+    border: 1px solid black;
+
+    .card :global {
+        .ant-card-head {
+            height: 57px;
+        }
+
+        .ant-card-body {
+            overflow: auto;
+            height: calc(100% - 57px);
+
+            .ant-carousel {
+                height: 100%;
+
+                .slick-slider {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+.row {
+    line-height: 60px;
+
+    button {
+        margin-right: 8px;
+    }
+}
+
+.drawer :global {
+    .ant-list:not(.ant-list-vertical) .ant-list-item-no-flex .ant-list-item-action {
+        float: left;
+    }
+}
+
+.drawerFooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #e8e8e8;
+    padding: 10px 16px;
+    text-align: right;
+    left: 0;
+    border-radius: 0 0 4px 4px;
+}

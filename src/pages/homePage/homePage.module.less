@@ -1,0 +1,18 @@
+.card :global {
+    .ant-card-head {
+        height: 57px;
+    }
+
+    .ant-card-body {
+        overflow: auto;
+        height: calc(100% - 57px);
+
+        .ant-carousel {
+            height: 100%;
+
+            .slick-slider {
+                height: 100%;
+            }
+        }
+    }
+}
