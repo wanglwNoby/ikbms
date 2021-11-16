@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Modal } from 'antd'
-import ModalTitle from './modalTitle/modalTitle'
+import ModalTitle from './modalTitle'
 
 interface IProps {
     visible: boolean;

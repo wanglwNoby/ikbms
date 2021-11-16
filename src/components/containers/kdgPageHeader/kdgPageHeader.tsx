@@ -53,7 +53,7 @@ class KdgManagePageHeader extends React.PureComponent<IProps, IState> {
     // 解析路由路径
     public analysisRoutePath = (pathname: string): React.ReactElement[] => {
         const path = pathname.split('/')
-        const breadcrumbItem: React.ReactElement[] = [<Breadcrumb.Item key="kdgManage">知识管理</Breadcrumb.Item>]
+        let breadcrumbItem: React.ReactElement[] = [<Breadcrumb.Item key="kdgManage">知识管理</Breadcrumb.Item>]
         for (let i = 1; i < path.length; i++) {
             breadcrumbItem.push(<Breadcrumb.Item key={path[i]}>{this.state.itemName[path[i]]}</Breadcrumb.Item>)
         }
