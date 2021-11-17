@@ -1,7 +1,7 @@
-import * as React from 'react';
-import { withRouter, RouteComponentProps } from 'react-router-dom';
-import { PageHeader, Breadcrumb, Button } from 'antd';
-import styles from './kdgPageHeader.module.less';
+import * as React from 'react'
+import { withRouter, RouteComponentProps } from 'react-router-dom'
+import { PageHeader, Breadcrumb, Button } from 'antd'
+import styles from './kdgPageHeader.module.less'
 
 interface IProps extends RouteComponentProps {
     handleQuery?: () => void; // 查询按钮
