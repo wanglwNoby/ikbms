@@ -30,7 +30,7 @@ module.exports = {
         'comma-dangle': ["error", { "functions": "never" }],
         'eol-last': ["error", "never"],
         'no-underscore-dangle': 'off',
-        'semi': ["error", "never"],
+        'semi': ["error", "always"],
         'vars-on-top': 'error',
         'no-plusplus': ["error", { "allowForLoopAfterthoughts": true }],
         'no-restricted-syntax': 'off',
